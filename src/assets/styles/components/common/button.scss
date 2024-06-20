@@ -1,0 +1,35 @@
+.ant-btn-dashed {
+  border-color: $colorPrimaryActive;
+  background: $colorPrimaryBg;
+  color: $colorPrimaryText;
+}
+.ant-btn-dashed:disabled,
+.ant-btn-dashed.ant-btn-disabled {
+  border-color: $borderColorDisabled;
+  background: $colorBgContainerDisabled;
+  color: $colorTextDisabled;
+}
+.ant-btn-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+  border-color:$colorPrimaryHover;
+  background: $colorPrimaryBg;
+  color: $colorPrimaryTextHover;
+}
+.ant-btn-dashed:not(:disabled):not(.ant-btn-disabled):active {
+  border-color:$colorPrimaryActive;
+  background: $colorPrimaryBg;
+  color: $colorPrimaryActive;
+}
+.ant-btn-dashed.ant-btn-background-ghost {
+  border-color: $color-primary;
+  background:transparent;
+  color: $colorPrimaryText;
+}
+.ant-btn-dashed.ant-btn-background-ghost:disabled {
+  border-color: $borderColorDisabled;
+  background: $colorBgContainerDisabled;
+  color: $colorTextDisabled;
+}
+.btn-full-block {
+  width: 100%;
+  height: 100%;
+}

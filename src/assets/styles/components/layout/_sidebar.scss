@@ -1,0 +1,65 @@
+.ant-layout-has-sider>.ant-layout {
+    min-height: calc(100vh - 68px);
+    display: flex;
+}
+
+.ant-layout-sider.siderbar {
+    @extend .pb-6;
+    border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+    position: fixed;
+    left: 0px;
+    top: 64px;
+    width: $siderbar-width !important;
+    max-width: $siderbar-width !important;
+
+    &.ant-layout-sider-collapsed {
+        width: $siderbar-min !important;
+        max-width: $siderbar-min !important;
+    }
+
+    &.project-sidebar {
+        .ant-select-selector {
+            padding: 0;
+        }
+    }
+
+    .ant-menu-inline {
+        @extend .pa-3;
+        border-inline-end: none !important;
+    }
+
+    .siderbar-header {
+        @extend .ma-6;
+    }
+
+    .ant-select-selection-item {
+        font-weight: bold;
+    }
+}
+
+.project-name.ant-select .ant-select-arrow {
+    color: $polaris-black !important;
+}
+.project-menu {
+
+    .ant-layout-sider.siderbar .ant-menu-inline {
+      padding: 0 !important;
+    }
+
+    .ant-menu-inline .ant-menu-item {
+      margin: 0 !important;
+      padding-left: 36px !important;
+    }
+
+    .ant-menu-submenu {
+      .ant-menu-submenu-title {
+        padding-left: 32px !important;
+      }
+  }
+}
+
+.project-menu,
+.workspace-menu {
+    overflow: auto;
+    height: calc(100vh - 185px);
+}

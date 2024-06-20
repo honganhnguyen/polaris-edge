@@ -1,0 +1,254 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../../../images/pictures/bg-body.jpg") fixed 0 0 no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 48px 0;
+
+  .top-bar {
+    position: absolute;
+    right: 28px;
+    top: 25px;
+
+    .contact-us {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.88);
+
+      a {
+        color: #1677ff;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .overlay-lines-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .overlay-star-image {
+    position: absolute;
+    top: 36px;
+    left: 70%;
+    z-index: 500;
+  }
+}
+
+.auth-container {
+  position: relative;
+  background-color: rgba(225,225,225, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 6px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 24px 48px 12px 48px;
+  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+    0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px 0px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  height: 100%;
+}
+
+.auth-form {
+  width: 300px;
+  &__title {
+    color: $text-dark;
+    line-height: 38px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding-bottom: 20px;
+    color: $text-blue !important;
+  }
+
+  &__label {
+    display: block;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 14px;
+    color: $text-blue !important;
+  }
+
+  &__text {
+    display: block;
+    color: $text-blue !important;
+    max-width: 419px;
+    word-wrap: break-word;
+  }
+
+  &__input {
+    border-radius: 8px;
+    min-width: 420px;
+    margin-bottom: 12px;
+    .ant-select {
+      min-height: 40px;
+      width: 300px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 8px;
+      .ant-select-selector {
+        background: rgba(255,255,255,0.6) !important;
+      }
+    }
+    #register-form_company_category {
+      min-height: 40px;
+      width: 300px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255,255,255,0.6);
+    }
+    input {
+      min-height: 40px;
+      width: 300px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255,255,255,0.6);
+    }
+    &.auth-form__password {
+      input {
+        min-height: 30px;
+      }
+    }
+    span {
+      max-width: 300px;
+    }
+    .ant-input:-webkit-autofill,
+    .ant-input:-webkit-autofill:hover,
+    .ant-input:-webkit-autofill:focus,
+    .ant-input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px $bg-white inset !important;
+    }
+  }
+
+  &__submit-button {
+    background-color: $polaris-black !important;
+    box-shadow: 0px 2px 0px 0px rgba(5, 145, 255, 0.1);
+    font-size: 16px;
+    min-height: 40px;
+    border-radius: 8px;
+  }
+
+  &__submit-button-2 {
+    background-color: $polaris-black !important;
+    box-shadow: 0px 2px 0px 0px rgba(5, 145, 255, 0.1);
+    font-size: 16px;
+    min-height: 40px;
+    border-radius: 8px;
+  }
+
+  &__google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: $text-blue;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .ant-btn-icon {
+      margin-inline-end: 100px !important;
+      margin-top: 1px;
+    }
+    img {
+      width: 72px;
+      height: 30px;
+    }
+    min-height: 40px;
+  }
+
+  &__microsoft-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: $text-blue;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .ant-btn-icon {
+      margin-inline-end: 100px !important;
+      margin-top: 1px;
+    }
+    img {
+      width: 110px;
+      height: 30px;
+    }
+    min-height: 40px;
+  }
+
+  &__link {
+    color: $color-primary;
+    text-decoration-line: underline !important;
+  }
+}
+
+.title-container {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding-bottom: 20px;
+
+  &__back-button {
+    border: none;
+    box-shadow: unset;
+    padding-top: 11px;
+    padding-left: 0px;
+    padding-right: 8px;
+    svg {
+      color: $text-blue;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__title {
+    font-size: 20px !important;
+    text-align: center;
+    margin-bottom: 24px;
+    color: $text-blue !important;
+  }
+}
+
+/* custom input company name & code */
+.com-input {
+  min-width: 300px;
+  max-width: 300px;
+  .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: rgba(255, 255, 255, 0.6);
+    .ant-select-selection-search {
+    }
+  }
+  .auth-form__input {
+    min-width: 230px;
+    max-width: 230px;
+    .ant-form-item-row {
+      min-width: 230px;
+      max-width: 230px;
+    }
+  }
+}
+
+.auth-com__code {
+  #register-form_companyCode_help {
+    margin-left: -238px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+}

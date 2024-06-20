@@ -1,0 +1,95 @@
+
+$polaris-light-blue: #F8FCFF;
+$polaris-black: #001d3d;
+
+$colorPrimaryBg: $polaris-light-blue;
+$colorPrimaryBgHover: #bae0ff;
+$colorPrimaryBorder: #91caff;
+$colorPrimaryBorderHover: #69b1ff;
+$colorPrimaryHover: #4096ff;
+
+$colorPrimary: #1677ff;
+$colorPrimaryActive: #0958d9;
+$colorPrimaryTextHover: #4096ff;
+$colorPrimaryText: #1677ff;
+$colorPrimaryTextActive: #0958d9;
+
+$borderColorDisabled: #D9D9D9;
+$colorBgContainerDisabled: rgba(0, 0, 0, 0.04);
+$colorTextDisabled: rgba(0, 0, 0, 0.25);
+
+// COLOR VARIABLES
+$color-primary: #1677FF;
+$color-secondary: #E75012;
+$color-white: #fff;
+$color-dark: #1D2123;
+$color-green: #BAE34D;
+$color-grey: #DEDEDE;
+$color-pink: #f759ab;
+$color-grey-weight: #A1A4AC;
+$color-blue: #5894F7;
+$color-danger: #ff4d4f;
+$color-warning: #FFA940;
+$color-primary-border: #91caff;
+$color-primary-background: #E6F4FF;
+
+
+// TEXT COLOR VARIABLES
+$colorTextBase: $polaris-black;
+$colorTextDescription: rgba(0, 0, 0, 0.45);
+$text-white: #fff;
+$text-grey: #A9A9A9;
+$text-secondary: rgba(0, 0, 0, 0.45);
+$text-dark: #000000;
+$text-green: #A6C84D;
+$text-blue: #172b4d;
+$text-danger: #CF1322;
+$text-warning: #FFA940;
+$text-success: #135200;
+$text-error: #ff4d4f;
+
+//FONT VARIABLES
+$font-secondary: 12px;
+$line-height-secondary: 20px;
+
+// BACKGROUND COLOR VARIABLES
+$bg-white: #fff;
+$bg-primary: #D9D9D9;
+$bg-danger: #CF1322;
+$bg-warning: #FFA940;
+$bg-grey: #F4F4F4;
+$bg-green: #A6C84D;
+$bg-dark: #1D2123;
+$bg-bold-blue: #224957;
+
+// HOVER AND PRESS COLOR
+$hover-item-color: rgba(0, 0, 0, 0.25);
+$press-item-color: #E0EDC2;
+
+// vertical and horizontal bar color
+$bar-color: rgba(0, 0, 0, 0.15);
+
+$border-primary: #777777;
+$border-grey: #707070;
+$border-dark: rgba(0, 0, 0, 0.15);
+
+$color-status-new: #531dab;
+$color-status-new-border: #d3adf7;
+$color-status-new-background: #f9f0ff;
+
+$color-status-draft: #d46b08;
+$color-status-draft-border: #ffd591;
+$color-status-draft-background: #fff7e6;
+
+$color-status-sent: #0958d9;
+$color-status-sent-border: #91caff;
+$color-status-sent-background: #e6f4ff;
+
+$color-status-accepted: #389e0d;
+$color-status-accepted-border: #b7eb8f;
+$color-status-accepted-background: #f6ffed;
+
+
+$siderbar-width: 300px;
+$siderbar-min: 80px;
+$content-has-siderbar-bg: #F4F4F4;

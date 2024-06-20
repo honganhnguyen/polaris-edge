@@ -1,0 +1,6 @@
+.header-container {
+    .ant-menu-horizontal {
+        @extend .px-8;
+        border-bottom: none;
+    }
+}

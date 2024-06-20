@@ -1,0 +1,15 @@
+.company-profile-modal {
+  .ant-upload-wrapper .ant-upload-drag {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.company-delete-confirm-modal {
+  .ant-modal-content {
+    position: fixed;
+    top: 100;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

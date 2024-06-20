@@ -1,0 +1,168 @@
+.workspace-settings-page.data-customization {
+  .settings-content {
+    padding-bottom: 60px;
+  }
+
+  .categories-container {
+    max-width: 700px;
+    &.table-project-status-list {
+      table {
+        thead {
+          &.ant-table-thead {
+            .ant-table-cell {
+              background: transparent !important;
+              border-bottom: 0 !important;
+              border-radius: 0;
+              font-weight: 400;
+              color: rgba(0, 0, 0, 0.45);
+              padding-left: 20px !important;
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ant-list-item {
+      border-block-end: none;
+    }
+
+    .categories-text {
+      border: 1px solid $color-grey;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 12px 24px;
+      width: 100%;
+      height: 48px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .ant-table-wrapper .ant-table-tbody > tr > th,
+    .ant-table-wrapper .ant-table-tbody > tr > td {
+      border-bottom: none;
+    }
+
+    .ant-table-cell-row-hover {
+      background-color: transparent;
+    }
+
+    .ant-table-wrapper .ant-table-cell,
+    .ant-table-wrapper .ant-table-thead > tr > th,
+    .ant-table-wrapper .ant-table-tbody > tr > th,
+    .ant-table-wrapper .ant-table-tbody > tr > td,
+    .ant-table-wrapper tfoot > tr > th,
+    .ant-table-wrapper tfoot > tr > td {
+      @extend .pa-2;
+    }
+
+    .project-text {
+      @extend .categories-text;
+      height: 80px;
+    }
+
+    .project-picture {
+      border-radius: 6px;
+      width: 80px;
+      height: 80px;
+    }
+
+    .project-upload {
+      border: 1px solid $color-grey;
+      border-radius: 6px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+
+      .project-upload-icon {
+        @extend .project-logo-icon;
+        border: 1px solid;
+        padding: 6px;
+        font-size: 18px;
+        &.hover-picture-edit {
+          border-radius: 6px;
+          border: 0;
+          padding: 0;
+        }
+      }
+
+      .project-upload-btn {
+        display: none;
+        color: $color-primary-border;
+      }
+    }
+
+    .project-upload:hover {
+      background-color: $color-primary-background;
+      border-color: $color-primary-border;
+      color: $color-primary-border;
+
+      .project-upload-btn {
+        display: unset;
+      }
+
+      .project-upload-icon {
+        display: none;
+      }
+    }
+
+    .table-project-type {
+      table {
+        thead {
+          tr {
+            > th {
+              background-color: transparent;
+              font-weight: 400;
+              color: #00000073;
+              border: 0 !important;
+              &::before {
+                width: 0 !important;
+              }
+              &.p-inline-row {
+                // padding-left: 26px !important;
+                text-align: center !important;
+              }
+              &.thumbnail-header {
+                text-align: center !important;
+                display: flex !important;
+                justify-content: center !important;
+              }
+            }
+            td {
+              background-color: transparent;
+              border: 0;
+              &::before {
+                width: 0 !important;
+              }
+              &.thumbnail-header {
+                text-align: center !important;
+                display: flex !important;
+                justify-content: center !important;
+
+                img {
+                  width: 80px !important;
+                  height: 80px !important;
+                  border-radius: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mt-35 {
+    margin-top: 35px;
+  }
+}

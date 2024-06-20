@@ -1,0 +1,21 @@
+.success-message {
+  display: block;
+  color: $text-success;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  svg {
+    margin-right: 2px;
+  }
+}
+
+.error-message {
+  display: block;
+  color: $text-error;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  svg {
+    margin-right: 4px;
+  }
+}

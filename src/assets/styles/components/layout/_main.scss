@@ -1,0 +1,105 @@
+.ant-layout,
+.ant-layout-header,
+.ant-layout-footer,
+.ant-layout .ant-layout-sider {
+    background-color: $bg-white;
+}
+
+.main-content {
+    overflow: initial;
+    flex: auto;
+}
+
+.primary-color {
+    color: $color-primary;
+}
+
+.header-container {
+    border-bottom: 1px solid $color-grey;
+    background-color: $bg-white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    .ant-layout-header {
+        @extend .px-6;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.ant-layout-no-sidebar {
+
+    .ant-layout-content,
+    .header-container .ant-layout-header {
+        max-width: $screen-xl;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .ant-breadcrumb {
+        .ant-breadcrumb-link {
+            min-height: 42px;
+
+            h1 {
+                padding-bottom: 10px;
+                font-weight: 400;
+                line-height: 46px;
+            }
+        }
+    }
+}
+
+.ant-layout-has-sider>.ant-layout {
+    background-color: $content-has-siderbar-bg;
+
+    >.ant-layout-content {
+        overflow: initial
+    }
+
+    >.ant-layout-footer {
+        background-color: $content-has-siderbar-bg;
+        text-align: center;
+    }
+
+    .ant-breadcrumb {
+        @extend .mb-9;
+    }
+}
+
+// .ant-upload-wrapper .ant-upload-drag {
+//     width: 100px;
+//     height: 100px;
+// }
+
+button+button {
+    margin-left: 14px;
+}
+
+.header-menu {
+    width: 100%;
+}
+
+.header-menu>.ant-menu-item-active,
+.header-menu>.ant-menu-item-selected::after,
+.header-menu>.ant-menu-submenu-selected::after,
+.header-menu>.ant-menu-item:hover::after,
+.header-menu>.ant-menu-submenu:hover::after,
+.header-menu>.ant-menu-item-active::after,
+.header-menu>.ant-menu-submenu-active::after,
+.header-menu>.ant-menu-item-open::after,
+.header-menu>.ant-menu-submenu-open::after {
+    border-bottom-width: 0px !important;
+    // border-bottom-color: transparent !important;
+}
+
+.header-menu>.ant-menu-item .header-menu-item {
+    height: 100%;
+}
+
+.header-menu>.ant-menu-item-active .header-menu-item,
+.header-menu>.ant-menu-item-selected .header-menu-item {
+    border-bottom: 2px solid;
+}

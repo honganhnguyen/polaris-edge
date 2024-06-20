@@ -1,0 +1,36 @@
+.workspace-settings-page.general-settings {
+  .settings-content {
+    .ant-input, .ant-picker, .ant-select > .ant-select-selector {
+      background-color: #F8FCFF;
+    }
+    .ant-picker {
+      width: 100%;
+    }
+    .ant-divider-horizontal {
+      margin-bottom: 12px;
+      margin-top: 42px;
+    }
+    .setting-section-header {
+      margin-bottom: 24px;
+    }
+    .ant-form-text {
+      padding-top: 16px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 12px;
+      &.text-black-45 {
+        color: rgba(0, 0, 0, 0.45);
+      }
+    }
+    .ant-checkbox-wrapper,
+    .ant-checkbox-wrapper {
+      margin-right: 16px;
+    }
+    .ant-upload-wrapper {
+      .ant-upload-drag {
+        width: 100px;
+        height: 100px;
+      } 
+    }
+  }
+}
